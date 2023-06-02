@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import aimsLogo from '../assets/aims-logo.png';
+import kashLogo from '../assets/kash-logo.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
@@ -34,25 +34,25 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
-        <title>A-I-M-S | buildspace</title>
+        <title>K-A-S-H | buildspace</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>A-I-M-S: Revolutionizing Mathematics with AI-Powered Problem Solving</h1>
+            <h1>K-A-S-H Adventures: Explore Magical Worlds and Exciting Tales</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Unlocking the Power of AI for Seamless Math Solutions and Enhanced Learning</h2>
+            <h2>Embark on a Journey through Enchanting Stories with K.A.S.H</h2>
           </div>
         </div>
         <div classname="logo-container">
-            <Image src={aimsLogo} alt="Your logo" />
+            <Image src={kashLogo} alt="Your logo" />
         </div>
         {/* Add this code here*/}
         <div className="prompt-container">
           <textarea
             className="prompt-box"
-            placeholder="Hello I am  A-I-M-S, What problem shall we solve"
+            placeholder="Hello I am  K-A-S-H, What story shall we create"
             value={userInput}
             onChange={onUserChangedText}
           />
@@ -88,7 +88,7 @@ const callGenerateEndpoint = async () => {
         <a
         href="https://buildspace.so/builds/ai-writer" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={aimsLogo} class="balls" alt="Your logo" />
+            <Image src={kashLogo} class="balls" alt="Your logo" />
             <p>build with buildspace</p>
           </div>
         </a>
